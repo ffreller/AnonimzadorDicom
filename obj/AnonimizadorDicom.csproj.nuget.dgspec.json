@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ffrel\\Desktop\\HAOC\\Others\\AnonimizadorDicom\\AnonimizadorDicom.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ffrel\\Desktop\\HAOC\\Others\\AnonimizadorDicom\\AnonimizadorDicom.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ffrel\\Desktop\\HAOC\\Others\\AnonimizadorDicom\\AnonimizadorDicom.csproj",
+        "projectName": "AnonimizadorDicom",
+        "projectPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\Others\\AnonimizadorDicom\\AnonimizadorDicom.csproj",
+        "packagesPath": "C:\\Users\\ffrel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\Others\\AnonimizadorDicom\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ffrel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Costura.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "fo-dicom": {
+              "target": "Package",
+              "version": "[4.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

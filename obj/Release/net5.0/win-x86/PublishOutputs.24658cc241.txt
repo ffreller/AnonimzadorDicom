@@ -1,0 +1,6 @@
+C:\Users\ffrel\Desktop\AnonimizadorDicom.pdb
+C:\Users\ffrel\Desktop\clrcompression.dll
+C:\Users\ffrel\Desktop\clrjit.dll
+C:\Users\ffrel\Desktop\coreclr.dll
+C:\Users\ffrel\Desktop\mscordaccore.dll
+C:\Users\ffrel\Desktop\AnonimizadorDicom.exe
