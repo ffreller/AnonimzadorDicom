@@ -17,7 +17,6 @@ namespace AnonimizadorDicom
         {
             string[] filePaths = Directory.GetFiles(@input, "*.*", SearchOption.AllDirectories);
             nFiles =  filePaths.Length;
-            // string randomPatientName = RandomString(15);
             int prevProg = 0;
             for (int i = 0; i < filePaths.Length; i++)
             {
@@ -50,7 +49,6 @@ namespace AnonimizadorDicom
             }; 
         }
 
-        // private void AnonymizeFile(string filePath, string newFilePath, string randomPatientName)
         private static void AnonymizeFile(string filePath, string newFilePath)
         {
             string fileName = filePath.Substring(filePath.LastIndexOf(@"\"));
@@ -74,16 +72,10 @@ namespace AnonimizadorDicom
             else
             {
                 listaNaoDicom.Add(fileName);
-                File.Copy(@filePath, @newFilePath);
+                if (!File.Exists(@newFilePath))
+                    File.Copy(@filePath, @newFilePath);
             }
         }
-
-        // private string RandomString(int length)
-        // {
-        //     Random random = new Random();
-        //     string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        //     return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
-        // }
 
         private static IEnumerable<int> AllIndexesOf(string str, string value)
         {
