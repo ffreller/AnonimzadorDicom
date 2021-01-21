@@ -3,15 +3,17 @@ using System.IO;
 using Dicom;
 using System.Linq;
 using System.Collections.Generic;
+using System.Text;
+using System.Security.Cryptography;
 
 namespace AnonimizadorDicom
 {
-    public class Metodos
+    public static class Metodos
     {
         private static DicomAnonymizer dicomAnonymizer = new DicomAnonymizer();
-        public List<string> listaNaoDicom = new List<string>();
-        public int nFiles { get; set; }
-        public void AnonymizeDirectory(string input, string output)
+        public static List<string> listaNaoDicom = new List<string>();
+        public static int nFiles { get; set; }
+        public static void AnonymizeDirectory(string input, string output)
         {
             string[] filePaths = Directory.GetFiles(@input, "*.*", SearchOption.AllDirectories);
             nFiles =  filePaths.Length;
@@ -35,7 +37,7 @@ namespace AnonimizadorDicom
             }
         }
 
-        private void CreateDirectories(string output, string selPath)
+        private static void CreateDirectories(string output, string selPath)
         {
             IEnumerable<int> indexes = AllIndexesOf(selPath, @"\").OrderByDescending(x => x);
             foreach (int index in indexes)
@@ -49,7 +51,7 @@ namespace AnonimizadorDicom
         }
 
         // private void AnonymizeFile(string filePath, string newFilePath, string randomPatientName)
-        private void AnonymizeFile(string filePath, string newFilePath)
+        private static void AnonymizeFile(string filePath, string newFilePath)
         {
             string fileName = filePath.Substring(filePath.LastIndexOf(@"\"));
             if (DicomFile.HasValidHeader(filePath))
@@ -57,9 +59,9 @@ namespace AnonimizadorDicom
                 var dicomFile = Dicom.DicomFile.Open(filePath);
                 if (dicomFile.Dataset.Contains(DicomTag.SOPInstanceUID))
                 {
+                    string patientName = dicomFile.Dataset.GetSingleValue<string>(DicomTag.PatientName).Encrypt();
                     DicomFile newFile = dicomAnonymizer.Anonymize(dicomFile);
-                    string sereisUid = newFile.Dataset.GetSingleValue<string>(DicomTag.SeriesInstanceUID);
-                    newFile.Dataset.AddOrUpdate<string>(DicomTag.PatientName, sereisUid);
+                    newFile.Dataset.AddOrUpdate<string>(DicomTag.PatientName, patientName);
                     newFile.Dataset.AddOrUpdate<string>(DicomTag.PatientIdentityRemoved, "YES");
                     newFile.Dataset.AddOrUpdate<string>(DicomTag.DeidentificationMethod, "Anonimizado por Fabio Freller - Hospital Alemão Oswaldo Cruz");
                     newFile.Save(Path.Combine(newFilePath));
@@ -83,7 +85,7 @@ namespace AnonimizadorDicom
         //     return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
         // }
 
-        private IEnumerable<int> AllIndexesOf(string str, string value)
+        private static IEnumerable<int> AllIndexesOf(string str, string value)
         {
             if (String.IsNullOrEmpty(value))
                 throw new ArgumentException("the string to find may not be empty: " + value);
@@ -94,6 +96,28 @@ namespace AnonimizadorDicom
                     break;
                 yield return index;
             }       
+        }
+
+        private static string Encrypt(this string clearText)
+        {
+            string EncryptionKey = "AnonimizadorFabioFrellerHAOC";
+            byte[] clearBytes = Encoding.Unicode.GetBytes(clearText);
+            using (Aes encryptor = Aes.Create())
+            {
+                Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
+                encryptor.Key = pdb.GetBytes(32);
+                encryptor.IV = pdb.GetBytes(16);
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateEncryptor(), CryptoStreamMode.Write))
+                    {
+                        cs.Write(clearBytes, 0, clearBytes.Length);
+                        cs.Close();
+                    }
+                    clearText = Convert.ToBase64String(ms.ToArray());
+                }
+            }
+            return clearText;
         }
     }
 }
