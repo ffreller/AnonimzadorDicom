@@ -5857,11 +5857,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ffrel\\Desktop\\HAOC\\Others\\AnonimizadorDicom\\AnonimizadorDicom.csproj",
+      "projectUniqueName": "C:\\Users\\ffrel\\Desktop\\HAOC\\HX-LAB\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
       "projectName": "AnonimizadorDicom",
-      "projectPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\Others\\AnonimizadorDicom\\AnonimizadorDicom.csproj",
+      "projectPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\HX-LAB\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
       "packagesPath": "C:\\Users\\ffrel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\Others\\AnonimizadorDicom\\obj\\",
+      "outputPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\HX-LAB\\AnonimzadorDicom\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ffrel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5914,7 +5914,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

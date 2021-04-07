@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5vDQQ2EUwAZu5g9iXi30siU2stiTQ8ZdSf28G/IUGXQaKVkGhsARYHUf4YYjwd/0NsspKy6DledZc0wPZVWkWg==",
+  "dgSpecHash": "JweFKyjT9geULImyjEKkNtbmWJorQUz9Srwu4qoPxfMxtUvubUjj01FcSHPXavvlKIZJR6lPRvYI+T2LNPFEJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ffrel\\Desktop\\HAOC\\Others\\AnonimizadorDicom\\AnonimizadorDicom.csproj",
+  "projectFilePath": "C:\\Users\\ffrel\\Desktop\\HAOC\\HX-LAB\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ffrel\\.nuget\\packages\\costura.fody\\4.1.0\\costura.fody.4.1.0.nupkg.sha512",
     "C:\\Users\\ffrel\\.nuget\\packages\\cscharls\\0.1.1\\cscharls.0.1.1.nupkg.sha512",

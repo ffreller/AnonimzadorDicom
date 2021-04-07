@@ -8259,11 +8259,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ffrel\\Desktop\\DIVE\\AnonimizadorDicom\\AnonimizadorDicom.csproj",
+      "projectUniqueName": "C:\\Users\\ffrel\\Desktop\\HAOC\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
       "projectName": "AnonimizadorDicom",
-      "projectPath": "C:\\Users\\ffrel\\Desktop\\DIVE\\AnonimizadorDicom\\AnonimizadorDicom.csproj",
+      "projectPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
       "packagesPath": "C:\\Users\\ffrel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ffrel\\Desktop\\DIVE\\AnonimizadorDicom\\obj\\publish\\win-x86\\",
+      "outputPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\AnonimzadorDicom\\obj\\publish\\win-x86\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ffrel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8314,15 +8314,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-            "version": "[5.0.1, 5.0.1]"
+            "version": "[5.0.2, 5.0.2]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x86",
-            "version": "[5.0.1, 5.0.1]"
+            "version": "[5.0.2, 5.0.2]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
-            "version": "[5.0.1, 5.0.1]"
+            "version": "[5.0.2, 5.0.2]"
           }
         ],
         "frameworkReferences": {
@@ -8330,7 +8330,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
