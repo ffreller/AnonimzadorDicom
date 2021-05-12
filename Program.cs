@@ -25,11 +25,11 @@ namespace AnonimizadorDicom
                 Console.WriteLine("Insira o endereço do diretório de destino:");
                 output = Console.ReadLine();
             }
-            
-            Metodos metodos = new Metodos();
-            metodos.AnonymizeDirectory(input, output);
-            int nFiles = metodos.nFiles;
-            List<string> listaNaoDicom = metodos.listaNaoDicom;
+
+            Anonimizador anonimizador = new Anonimizador();
+            anonimizador.AnonymizeDirectory(input, output);
+            int nFiles = anonimizador.nFiles;
+            List<string> listaNaoDicom = anonimizador.listaNaoDicom;
 
             Console.Clear();
             if (nFiles-listaNaoDicom.Count != 0)

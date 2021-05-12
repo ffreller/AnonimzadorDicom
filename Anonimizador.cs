@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace AnonimizadorDicom
 {
-    public class Metodos
+    public class Anonimizador
     {
         private DicomAnonymizer dicomAnonymizer = new DicomAnonymizer();
         public List<string> listaNaoDicom = new List<string>();
