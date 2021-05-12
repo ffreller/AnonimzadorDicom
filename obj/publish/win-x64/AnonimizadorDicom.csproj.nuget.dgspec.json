@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ffrel\\Desktop\\HAOC\\AnonimzadorDicom\\AnonimizadorDicom.csproj": {}
+    "C:\\Users\\ffrel\\Desktop\\HAOC\\HX-LAB\\AnonimzadorDicom\\AnonimizadorDicom.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ffrel\\Desktop\\HAOC\\AnonimzadorDicom\\AnonimizadorDicom.csproj": {
+    "C:\\Users\\ffrel\\Desktop\\HAOC\\HX-LAB\\AnonimzadorDicom\\AnonimizadorDicom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ffrel\\Desktop\\HAOC\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
+        "projectUniqueName": "C:\\Users\\ffrel\\Desktop\\HAOC\\HX-LAB\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
         "projectName": "AnonimizadorDicom",
-        "projectPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
+        "projectPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\HX-LAB\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
         "packagesPath": "C:\\Users\\ffrel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\AnonimzadorDicom\\obj\\publish\\win-x64\\",
+        "outputPath": "C:\\Users\\ffrel\\Desktop\\HAOC\\HX-LAB\\AnonimzadorDicom\\obj\\publish\\win-x64\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ffrel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,15 +62,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[5.0.2, 5.0.2]"
+              "version": "[5.0.4, 5.0.4]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[5.0.2, 5.0.2]"
+              "version": "[5.0.4, 5.0.4]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[5.0.2, 5.0.2]"
+              "version": "[5.0.4, 5.0.4]"
             }
           ],
           "frameworkReferences": {
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

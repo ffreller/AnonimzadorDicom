@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yxzvgU6ZRpM7oGd6nJChNuQLatUE/Z5q708Fn27XsO189m1cRE78NReXor8ciKx2wIszni0m4Y/HTG5TY5LR9w==",
+  "dgSpecHash": "lG8ql/g2xeV353FzrDSjLskguNylyNji997W3eAtYFkyuDwP+knsFvs5ENgUyuMXfWrwCEAZvXzKfto6jJHkPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ffrel\\Desktop\\HAOC\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
+  "projectFilePath": "C:\\Users\\ffrel\\Desktop\\HAOC\\HX-LAB\\AnonimzadorDicom\\AnonimizadorDicom.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ffrel\\.nuget\\packages\\costura.fody\\4.1.0\\costura.fody.4.1.0.nupkg.sha512",
     "C:\\Users\\ffrel\\.nuget\\packages\\cscharls\\0.1.1\\cscharls.0.1.1.nupkg.sha512",
@@ -127,9 +127,9 @@
     "C:\\Users\\ffrel\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\ffrel\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\ffrel\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\ffrel\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.2\\microsoft.netcore.app.runtime.win-x64.5.0.2.nupkg.sha512",
-    "C:\\Users\\ffrel\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.2\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.2.nupkg.sha512",
-    "C:\\Users\\ffrel\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.2\\microsoft.aspnetcore.app.runtime.win-x64.5.0.2.nupkg.sha512"
+    "C:\\Users\\ffrel\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.4\\microsoft.netcore.app.runtime.win-x64.5.0.4.nupkg.sha512",
+    "C:\\Users\\ffrel\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.4.nupkg.sha512",
+    "C:\\Users\\ffrel\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.4\\microsoft.aspnetcore.app.runtime.win-x64.5.0.4.nupkg.sha512"
   ],
   "logs": []
 }
